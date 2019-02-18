@@ -1,0 +1,94 @@
+@import 'utilities';
+@import 'color';
+
+//fonts
+//quicksand regular
+@font-face {
+    font-family: 'QuickSand';
+    src: url('../css/fonts/Quicksand/Quicksand-Regular.ttf');
+    font-weight: normal;
+  }
+
+//quicksand light
+@font-face {
+    font-family: 'QuickSand';
+    src: url('../css/fonts/Quicksand/Quicksand-Light.ttf');
+    font-weight: 300;
+  }
+
+//quicksand medium
+@font-face {
+    font-family: 'QuickSand';
+    src: url('../css/fonts/Quicksand/Quicksand-Medium.ttf');
+    font-weight: 500;
+  }
+
+//quicksand bold
+@font-face {
+    font-family: 'QuickSand';
+    src: url('../css/fonts/Quicksand/Quicksand-Bold.ttf');
+    font-weight: 900;
+  }
+
+//nanum pen script
+@font-face {
+    font-family: 'NanumPen';
+    src: url('../css/fonts/NanumPenScript/NanumPenScript-Regular.ttf');
+    font-weight: 900;
+  }
+
+//gilroy fonts 
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('fonts/Gilroy/GilroyBold.eot');
+    src: url('fonts/Gilroy/GilroyBold.eot') format('embedded-opentype'),
+         url('fonts/Gilroy/GilroyBold.woff2') format('woff2'),
+         url('fonts/Gilroy/GilroyBold.woff') format('woff'),
+         url('fonts/Gilroy/GilroyBold.ttf') format('truetype'),
+         url('fonts/Gilroy/GilroyBold.svg#GilroyBold') format('svg');
+}
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('fonts/Gilroy/GilroyMedium.eot');
+    src: url('fonts/Gilroy/GilroyMedium.eot') format('embedded-opentype'),
+         url('fonts/Gilroy/GilroyMedium.woff2') format('woff2'),
+         url('fonts/Gilroy/GilroyMedium.woff') format('woff'),
+         url('fonts/Gilroy/GilroyMedium.ttf') format('truetype'),
+         url('fonts/Gilroy/GilroyMedium.svg#GilroyMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('fonts/Gilroy/GilroyLight.eot');
+    src: url('fonts/Gilroy/GilroyLight.eot') format('embedded-opentype'),
+         url('fonts/Gilroy/GilroyLight.woff2') format('woff2'),
+         url('fonts/Gilroy/GilroyLight.woff') format('woff'),
+         url('fonts/Gilroy/GilroyLight.ttf') format('truetype'),
+         url('fonts/Gilroy/GilroyLight.svg#GilroyLight') format('svg');
+}
+.nb-vj{
+    font-family: 'QuickSand', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    
+    .container-fluid{
+        max-width: 1170px;
+        padding: 0 20px;
+        @media (min-width: 1600px){
+            max-width: 1300px;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+
+    //background-color
+    .bg-extra-light{
+        background-color: $extra-light-gray;
+    }
+    .bg-black{
+        background-color: #000;
+    }
+   
+}

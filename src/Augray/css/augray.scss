@@ -1,0 +1,419 @@
+//augray specific fonts
+//exo regular
+@font-face {
+    font-family: 'Exo';
+    src: url('../assets/fonts/exo/Exo-Regular.otf');
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../assets/fonts/exo/Exo-Light.otf');
+    font-weight: 300;
+  }
+
+//styles for augray specific
+// @import '../css/color';
+@import '../../css/color';
+.nb-vj{
+    //augray specific first fold
+    .augray-first{
+        padding: 72px 0;
+        @media (min-width: 768px){
+            padding: 120px 0;
+        }
+
+        .img-wrapper{
+            position: relative;
+            margin: auto;
+            &--caption{
+                position: relative;
+            }
+            img{
+                position: relative;
+                z-index: 2;
+            }
+            .bg-circle{
+                position: absolute;
+                top: 44%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                z-index: 1;
+            }
+            &--1{
+                max-width: 295px;
+                @media (min-width:768px){
+                    margin-left: 0;
+                }
+            }
+            &--2{
+                max-width: 452px;
+                margin-right: 0;
+                .bg-circle{
+                    width: 85%;
+                    top: 0;
+                    transform: translate(-50%, 0);
+                }
+                &--outer{
+                    @media (min-width:768px){
+                        margin-bottom: 75px;
+                    }
+                    .caption{
+                        font-family: 'NanumPen', cursive;
+                        font-size: 1.8125rem;
+                        margin:0 auto 1rem auto;
+                        max-width: 212px;
+                        position: relative;
+                        @media (min-width: 768px){
+                            position: absolute;
+                            margin: 0;
+                            right: 70vw;
+                            top: 35%;
+                        }
+                        @media (min-width: 1200px){
+                            right: 652px;
+                        }
+                        &::before{
+                            content: "";
+                            display: block;
+                            height: 100px;
+                            width: 0;
+                            border: 1px dashed black;
+                            position: absolute;
+                            top: 16px;
+                            right: 0;   
+                            @media (min-width: 768px){
+                                height: 0;
+                                width: 25vw;
+                                right: calc(-25vw - 8px);
+                                top: 13px;
+                            }
+                            @media (min-width: 1200px){
+                                width: 205px;
+                                right: -214px;
+                            }
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            height: 8px;
+                            width: 8px;
+                            border-radius: 50%;
+                            border: 1.5px solid black;
+                            position: absolute;
+                            top: 10px;
+                            right: -3px;
+                            @media (min-width: 786px){
+                                right: -8px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+    .floating-images{
+        position: relative;
+        padding-bottom: 180px;
+        img{
+            box-shadow: 20px 20px 40px #E6E6E6;
+            margin: 2rem auto auto auto;
+            max-width: 350px;
+            display: block;
+            @media (min-width: 768px){
+                max-width: none;
+            }
+            @media (min-width: 992px){
+                margin-top: 0;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: $extra-light-gray;
+            height: 570px;
+            @media (min-width: 768px){
+                height: 332px;
+            }
+        }
+    }
+    .floating-img-wrapper{
+        position: relative;
+        &--1{
+            @media (min-width: 992px){
+                top: 40px;
+            }
+        }
+        &--2{
+            @media (min-width: 768px){
+                top: -40px;
+            }
+            &--2{
+                @media (min-width: 992px){
+                    margin-top: 32px !important;
+                }
+            }
+        }
+        &--3{
+            @media (min-width: 992px){
+                top: 40px;
+            }
+        }
+        &--4{
+            @media (min-width: 768px){
+                top: -60px;
+                left: 0;
+            }
+            @media (min-width: 992px){
+                top: 40px;
+            }
+        }
+    }
+    .augray-impression{
+        padding: 128px 0 88px 0;
+        @media (min-width: 992px){
+            padding: 0;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            min-height: 920px;
+        }
+        .section-title{
+            text-align: center;
+            h2{
+                margin-top: 0;
+            }
+        }
+        &__big{
+            max-width: 366px;
+            margin: auto;
+        }
+        &__screens{
+            margin-top: 2rem;
+            @media (min-width: 768px){
+                margin-top: 0;
+            }
+            @media (min-width: 992px){
+                display: flex;
+            }
+            &__wrapper{
+                @media (min-width: 768px){
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                }
+            }
+            &__items{
+                width: 240px;
+                @media (min-width: 992px){
+                    width: auto;
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+    }
+
+    .full-width-banner{
+        height: 100vh;
+        width: 100%;
+        background-image: url('../assets/images/img-augrey-branding-section-1440-px.png');
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .augray-anywhere{
+        padding: 120px 0;
+
+        .img-wrapper{
+            padding-top: 2rem;
+            max-width: 490px;
+            margin: auto;
+            @media (min-width: 768px){
+                padding-top: 0;
+            }
+            &--1{
+                @media (min-width: 768px){
+                    // padding-top: 317px;
+                    padding-top: 160px;
+                    margin-left: 0;
+                }
+                @media (min-width: 992px){
+                    padding-top: 317px;
+                }
+            }
+            &--2{
+                @media (min-width: 768px){
+                    margin-right: 0;
+                }
+            }
+            &--3{
+                @media (min-width: 768px){
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .augray-anywhere__para{
+            font-size: 1.125rem;
+            line-height: 26px;
+            color: $dark-gray;
+            margin-top: 0;
+            padding: 2rem 0 0 0;
+            display: none;
+            max-width: 390px;
+            @media (min-width: 768px){
+                display: block;
+                padding: 60px 0;
+                margin: 0;
+            }
+            @media (min-width: 992px){
+                padding: 124px 0 148px 0;
+            }
+            &__wrapper{
+                max-width: 490px;
+                margin: auto 0 auto auto;
+            }
+            &--sm-only{
+                display: block;
+                @media (min-width: 768px){
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .augray-memories{
+        text-align: center;
+        padding-top: 120px;
+        .section-title{
+            h2{
+               margin : 0;
+            }
+            p{
+                margin:1.5rem auto 4rem auto;
+            }
+        }
+        .img-wrapper{
+            position: relative;
+            img{
+                max-width: 375px;
+                margin: auto;
+                position: relative;
+                z-index: 2;
+            }
+            &__bg{
+                z-index: 1;
+                background-color: $secondary-blue;
+                position: absolute;
+                bottom: 35%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                height: 95vw;
+                width: 95vw;
+                border-radius: 50%;
+                @media (min-width: 768px){
+                    width: 672px;
+                    height: 672px;
+                    bottom: 25%;
+                }
+            }
+        }
+    }
+
+    .augray-devil{
+        background-color: #1f1f1f;
+        padding: 120px 0 120px 0;
+        position: relative;
+        z-index: 3;
+        // margin-top: -42vw;
+        margin-top: -25vw;
+        @media (min-width: 414px){
+            margin-top: -188px;
+        }
+        .section-title{
+            color: $gray;
+            max-width: 326px;
+            margin-bottom: 5rem;
+            h2{
+                margin-top: 0;
+            }
+            span{
+                color: #FFF;
+            }
+            p{
+                color: #FFF;
+                font-size: 1.125rem;
+            }
+        }
+        img{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .augray-possibilities{
+        padding: 120px 0;
+        &__title{
+            order: -1;
+            @media (min-width: 992px){
+                order: 0;
+            }
+        }
+        .section-title{
+            h2{
+                margin-top: 0;
+            }
+        }
+        .img-wrapper{
+            margin: 2rem auto auto auto;
+            max-width: 295px;
+            @media (min-width: 768px){
+                margin-top: 0;
+            }
+            &--1{
+                @media (min-width: 768px){
+                    align-items: center;
+                    height: 100%;
+                    display: flex;
+                }
+            }
+            &--2{
+                @media (min-width: 768px){
+                    margin-top: 4rem;
+                }
+                @media (min-width: 992px){
+                    margin-top: 0;
+                }
+            }
+            &--3{
+                @media (min-width: 768px){
+                    margin-top: 4rem;
+                }
+            }
+
+        }
+        .bg-element{
+            display: none;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            @media (min-width: 992px){
+                left: 0;
+                top: 50%;
+            }
+            @media (min-width: 768px){
+                display: block;
+            }
+        }
+    }
+}
